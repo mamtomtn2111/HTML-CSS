@@ -94,7 +94,7 @@
 #slider{
     margin-top: 46px;
     padding-top: 50%;
-    background: url('/Assets/img/band.jpg') top center/ cover no-repeat;
+    background: url('../img/band.jpg') top center/ cover no-repeat;
     position: relative;
 }
 
