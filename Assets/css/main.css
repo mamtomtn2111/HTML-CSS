@@ -1,0 +1,205 @@
+/* Reset css step */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dángdáng
+*/
+#main{
+    
+}
+
+/*Start Header*/
+#nav{
+    display: inline-block;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 46px;
+    width: 100%;
+    background-color: #000000;
+    z-index: 1;
+}
+
+#header .search-button{
+    float: right;
+    cursor: pointer;
+}
+
+#header .search-button:hover{
+    background-color: red;
+}
+
+#header .search-icon{
+    color: white;
+    font-size: 24px;
+    line-height: 46px;
+    padding: 0 20px;
+}
+
+#nav > li{
+    display: inline-block;
+}
+
+#nav li{
+    position: relative;
+}
+
+#nav li:hover .subnav{
+    display: block;
+}
+
+#nav li a{
+    color: white;
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav > li:hover > a,
+#nav .subnav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav{
+    display: none ;
+    position: absolute;
+    background-color:white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+}
+
+#nav .subnav a{
+    color: black;
+    padding:0 12px;
+    line-height: 38px;
+}
+/*End header*/
+
+/*Start slider*/
+#slider{
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url('/Assets/img/band.jpg') top center/ cover no-repeat;
+    position: relative;
+}
+
+#slider .text-content{
+    position:absolute;
+    bottom: 47px;
+    color: white;
+    /*method 1*/
+    /* left:50%;
+    transform: translateX(-50%);
+    text-align: center;  */
+
+    /*method 2*/
+    width: 100%;
+    text-align: center;
+
+    /*method 3*/
+    /* right: 0;
+    left: 0;
+    text-align: center; */
+}
+
+#slider .text-heading{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+#slider .text-description{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+/*Endslider*/
+
+/*Start content*/
+
+/*Start section*/
+#content{
+
+}
+
+#content .content-section{
+    max-width: 800px;
+    padding: 64px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#content .section-heading{
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+}
+
+#content .section-sologan{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic; /*italic là phone chữ nghiêng*/
+    opacity: 0.6; /*Độ mờ chữ*/
+}
+
+#content .about-content{
+    margin-top: 25px;
+    line-height: 1.4;
+}
+
+
+#content .section-heading,
+#content .section-sologan{
+    text-align: center;
+}
+/*End Section*/
+
+/*Start Team section*/
+
+#content .members-list{
+    margin-top: 45px;
+}
+
+#content .member-item{
+    float: left;
+    width: calc(100% / 3);
+    text-align: center;
+}
+
+#content .name{
+    font-size: 15px;
+}
+
+#content .member-img{
+    margin-top: 15px;
+    width: 154px;
+    height: 154px;
+    border-radius: 4px;
+}
+
+
+/*End Team section*/
+
+/*End content*/
+#footer{
+
+}
+
+html{
+    font-family: Helvetica;
+}
