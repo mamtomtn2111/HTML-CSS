@@ -8,16 +8,17 @@
     <title>Well-known band</title>
     <link rel="stylesheet" href="./Assets/css/main.css">
     <link rel="stylesheet" href="./Assets/themify-icons/themify-icons.css">
+    <link rel="icon" href="/Assets/img/icon.jfif" type="image/gif" sizes="16x16">
 </head>
 <body>
     <div id="main">
         <div id="header">
             <!-- ul#nav>li*5>a -->
             <ul id="nav">
-                <li><a href="">Home</a></li>
-                <li><a href="">Band</a></li>
-                <li><a href="">Tour</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#band">Band</a></li>
+                <li><a href="#tour">Tour</a></li>
+                <li><a href="#contact">Contact</a></li>
                 <li>
                     <a href="#">More ▼</a>
                     <ul class="subnav">
@@ -41,32 +42,30 @@
             </div>
         </div>
         <div id="content">
-            <div class="content-section">
+            <div id="band" class="content-section">
                 <h2 class="section-heading">THE BAND</h2>
                 <p class="section-sologan">We love music</p>
                 <p class="about-content">
                     We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                 </p>
-                <div class="members-list">
-                    <div class="member-item">
+                <div class="row members-list">
+                    <div class="col col-3 text-center">
                         <p class="name">Name</p>
                         <img src="./Assets/img/bandmember.jpg" alt="Fault" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-3 text-center">
                         <p class="name">Hải</p>
                         <img src="./Assets/img/me.jpg" alt="Fault" class="member-img">
                     </div>
-                    <div class="member-item">
+                    <div class="col col-3 text-center">
                         <p class="name">Name</p>
                         <img src="./Assets/img/bandmember.jpg" alt="Fault" class="member-img">
                     </div>
-                    <div class="clear"></div>
                 </div>
             </div>
 
-            <!--Tour section-->
-            
-            <div class="tour-section">
+            <!--Start Tour section-->
+            <div id="tour" class="tour-section">
                 <!--Tickets-->
                 <div class="content-section">
                     <h2 class="section-heading text-white">TOUR DATES</h2>
@@ -77,47 +76,89 @@
                         <li>November <span class="quantity">3</span></li>
                     </ul>
                     <!--Places-->
-                    <div class="places-list">
-                        <div class="places-items">
+                    <div class="row places-list">
+                        <div class="col col-3">
                             <img src="./Assets/img/Newyork.jpg" alt="Newyork" class="places-img">
                             <div class="place-body">
                                 <h3 class="place-heading">New York</h3>
                                 <p class="place-time">Fri 27 Nov 2021</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
 
-                        <div class="places-items">
+                        <div class="col col-3">
                             <img src="./Assets/img/paris.jpg" alt="Paris" class="places-img">
                             <div class="place-body">
                                 <h3 class="place-heading">Paris</h3>
                                 <p class="place-time">Sat 28 Nov 2021</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
 
-                        <div class="places-items">
+                        <div class="col col-3">
                             <img src="./Assets/img/SanF.jpg" alt="San Francisco" class="places-img">
                             <div class="place-body">
                                 <h3 class="place-heading">San Francisco</h3>
                                 <p class="place-time">Sun 29 Nov 2021</p>
                                 <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                                <a href="#" class="place-buy-btn">Buy Tickets</a>
+                                <a href="#" class="btn">Buy Tickets</a>
                             </div>
                         </div>
                         <div class="clear"></div>
                     </div>
                 </div>
             </div>
-            <!--Contact section-->
-            <div class="content-section">
+            <!--End Tour section-->
+
+            <!--Start Contact section-->
+            <div id="contact" class="content-section">
                 <h2 class="section-heading">CONTACT</h2>
                 <p class="section-sologan">Fan? Drop a note!</p>
-            </div>    
+                <div class="row contact-content">
+                    <div class="col col-2 contact-info">
+                        <p><i class="ti-location-pin"></i>Thai Nguyen, Viet Nam</p>
+                        <p><i class="ti-mobile"></i>Phone: +84 34408****</p>
+                        <p><i class="ti-email"></i>Email: mamtomtn2111@gmail.com</p>
+                    </div>
+                    <div class="col col-2 contact-form">
+                        <form action="">
+                            <div class="row">
+                                <div class="col col-2">
+                                    <input type="text" name="" placeholder="Name" required id="" class="form-control">
+                                </div>
+                                <div class="col col-2">
+                                    <input type="email" name="" placeholder="Email" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <div class="row mt-8">
+                                <div class="col col-1">
+                                    <input type="text" name="" placeholder="Message" required id="" class="form-control">
+                                </div>
+                            </div>
+                            <input class="btn mt-16 float-right" type="submit" value="SEND">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!--End Contact section-->
+            <div class="map-section">
+                <img src="/Assets/img/map.jpg" alt="Map">
+            </div>
         </div>
-        <div id="footer"></div>
+        <div id="footer">
+            <div class="social-network">
+                <a href="https://www.facebook.com/hai.nguyenvuhai.2001/"><i class="ti-facebook"></i></a>
+                <a href="https://github.com/mamtomtn2111/"><i class="ti-github"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-twitter-alt"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright">Powered by <a href="https://www.facebook.com/hai.nguyenvuhai.2001/">Nguyễn Vũ Hải</a></p>
+            <p class="copyright">Origin: w3school</p>
+        </div>
     </div>
 </body>
 </html>

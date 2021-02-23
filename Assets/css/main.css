@@ -10,16 +10,75 @@
 3. Màu sắc
 4. Kiểu dángdáng
 */
+
+/*Class chung*/
 #main{
     
 }
 
-.clear {
+.text-white {
+    color: white !important;
+}
+
+.row{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after {
+    content: "";
+    display: block;
     clear: both;
 }
 
-.text-white {
+.text-center{
+    text-align: center !important;
+}
+
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-3{
+    width: calc(100% / 3);
+}
+
+.col-2{
+    width: 50%;
+}
+
+.col-1{
+    width: 100%;
+}
+
+.mt-8{
+    margin-top: 8px !important;
+}
+
+.mt-16{
+    margin-top: 16px !important;
+}
+
+.btn{
     color: white;
+    text-decoration: none;
+    background-color: black;
+    margin: 0 0 16px;
+    padding: 8px 16px;
+    display: inline-block;
+    border: none;
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: #ccc;
+    color: black;
+}
+
+.float-right {
+    float: right;
 }
 
 /*Start Header*/
@@ -182,12 +241,7 @@
 #content .members-list{
     margin-top: 45px;
     /* overflow: hidden; */
-}
-
-#content .member-item{
-    float: left;
-    width: calc(100% / 3);
-    text-align: center;
+    margin-bottom: 48px;
 }
 
 #content .name{
@@ -245,14 +299,8 @@
 
 /*Start Places*/
 .places-list{
-    margin: 32px -8px 0;
+    margin-top: 32px;
     padding-bottom: 48px;
-}
-
-.places-items{
-    float: left;
-    width: 33.3333%;
-    padding: 0 8px;
 }
 
 .places-img{
@@ -286,26 +334,71 @@
     margin: 15px 0;
 }
 
-.place-buy-btn{
-    color: white;
-    text-decoration: none;
-    background-color: black;
-    margin: 0 0 16px;
-    padding: 8px 16px;
-    display: inline-block;
-}
-
-.place-buy-btn:hover{
-    background-color: #ccc;
-    color: black;
-}
 /*End Places*/
 
-/*End content*/
-#footer{
-
+/*Start contact form*/
+.contact-content{
+    margin-top: 48px;
 }
+
+.contact-info{
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+.contact-info i[class *="ti-"] {
+    display: inline-block;
+    width: 30px;
+}
+
+.contact-form{
+    font-size: 15px;
+}
+
+.contact-form .form-control{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+/*End contact form*/
+/*Map section*/
+.map-section img{
+    width: 100%;
+}
+
+/*End content*/
+
+/*Start footer*/
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#footer .social-network {
+    font-size: 24px;
+}
+
+#footer .social-network a{
+    color: rgba(0 , 0 , 0 , 0.6);
+    text-decoration: none;
+}
+
+#footer .social-network a:hover{
+    color: rgba(0 , 0 , 0 , 0.3);
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin-top: 15px;
+}
+
+#footer .copyright a{
+    color: rgba(0 , 0 , 0 , 0.6);
+}
+
+/*End Footer*/
 
 html{
     font-family: Helvetica;
+    scroll-behavior: smooth;
 }
